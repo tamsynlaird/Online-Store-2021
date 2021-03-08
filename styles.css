@@ -1,7 +1,6 @@
 body {
   background-color:white;
   box-sizing:borderbox;
-  margin:;
 }
 
 header {
@@ -11,9 +10,31 @@ header {
   text-align:center;
 }
 
-nav {
-  background-color:lightgrey;
-  border: solid darkgrey;
+  ul {
+	position: sticky;
+	top: 2px;
+	list-style-type: none;
+	margin-top: 5px; 
+	padding: 0;
+	overflow: hidden;
+	background-color: lightgrey;
+	 display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none; 
+}
+li a:hover {  
+  background-color: darkgrey;
+	color: white;
 }
 
 aside {
@@ -107,7 +128,7 @@ h3 {
 }
 
 .tile{
- display:inline-block;
+ display: inline-block;
  margin:10px;
  height: 200px;
  width:200px;
