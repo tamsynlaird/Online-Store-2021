@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="styles.css"><!--links this page to styles.css so there's a seperate page for styling the website-->
 </head>
   
 <body>
-  <header>
-    <div class="onediv">
-        <div class="container">
-          <nav class="ForUser">
+  
+<div id="ad">
+        sign in for more features
+    </div><!--drop down ad just to see if I could do it. acta as a reminder and it's just a simple div-->
+  
+  <headerhidden><!--this acts as a point to remind me whats in it. It's a hidden header that only apears when the screen width is max 480px-->
+    <div id="header-media">
+          <h2 id="eng-logo">
+<a href="index.html">
+  空手道的店<h5 id="eng-logo">Karate shop</h5>
+</a></h2>
+</div>
+</headerhidden>
+
+  <header><!--header section for when width min is 481px-->
+
+        <div class="container"><!--container class start(container contains all elements in header-->
             
                       <div id="header-logo">
           <h2 id="header-logo-link">
@@ -17,102 +30,74 @@
 </a></h2>
 
 </div>
-                <ul class="ForUser-section"></ul>
-          </nav>
-          <nav class="navUser">
-            <ul class="pick">
-              <li  class="seperate-ul">
-            <a class="signin" href="register.html">
-                <span class="login"></span>
-                <span class="navUser-login">Sign in</span>
-            </a>
+            <ul>
+              <li  class="seperate-ul"><!--class "seperate-ul" is used to style li elements within uls that aren't in the main navbar(ones using only the css of the ul li tag in styles.css-->
+            <a class="signin" href="register.html"><!--href embeds a link into the elements that are between the <a> tag-->
+                <span class="navUser-login">Sign in</span><!--this is within the <a> tag therefore you can travel to the link by clicking it-->
+            </a><!--end of <a> tag therefore anything outside is not linked to the embeded link-->
         </li>
         <li  class="seperate-ul">
           <a class="createaccount" href="register.html">
-            <span class="create"></span>
             <span class="navUser-create">Register</span>
           </a>
         </li>
             </ul>
-          </nav>
-        </div>
-      </div>
+        </div><!--container class end-->
     </header>
     
-    <section>
-        <div class="twodiv">
-      <div class="container">
+        <div class="explorediv"><!--this is the foundation of the section-->
+      <div class="container"><!--container class used again for same styling in css-->
         
-         <nav>         
+         <nav><!--nav tag shows it's a navigation system-->         
   <div id="drop-nav-button">
         <img id="menu-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAADPz89LS0uWlpb39/eCgoKQkJCxsbH29vZiYmI4ODh0dHTX19empqbFxcXr6+sQEBDh4eEbGxu7u7s0NDR6enpXV1egoKDJyclvb28ODg6IiIhcXFwfHx8ZGRnwNjATAAACZUlEQVR4nO3dCW7CMBCFYRdIw75vbSm9/y2rqKgUVRo72NJoxv93gveUkGBj7BAAAAAAAAAAAAAAAAAAoAKrdjq0Y9qu+tVbH1/sOa7TC7baYZ/UJvZrZtpJnzZrkgputHNm2KRUPGinzHKIF3zVzpjpNVZwq50w2zbScKodMNtULjjRzlfARGw41o5XwFhsONeOV8BcbGj3ZX83Extqpyui8oY77XQFXMWGJ+14BZzEhlbHTX/JY6iBdrwCFmJDD48auWBYaufLtow0NP803cUKhoV2xEyRT6H9+zR6j3bO2ikznFMKhrDSzvm05GnhxuYgap40l3izHlmbcpuNekx53y7kdmDHts/lAwAAAAAAAAAAxjRvy5Edy7e+P1zsh9q/JfU23PfoN7hqx33KdZBa0O5i9ugy9h+f2jkzfKYUfNdOmeU9XtD6Sm95lXfwsFhfXqofwkU7YLZLpKF2vgLkgnYXC93Jy4bsvgrv5JeivS9r/w3Fhh/a8QrYiA210xVR+TX0/zn0/yz1/z708KiRC1bwvdT+2CI6JeV+fFjBGL+CeRrLT5vEubYK5kuD/znvjvffLQAAAAAAAAAAgCHO94myt9fXoddeXxOj+7XFFkD/srtsKHHPPff7Jrrf+9L//qVf2hEzRfegtX2PdmL3qXa+AuSC/vfz9r8nu/999a3v5t2Rn6ba6YqovKH/c2ZsDpseyWcFWV/l3ZFXettfqh/9I7D7c9cqODvP/H+7EhazW5tke5RwhmVoLI+Bk84h9X+WbLA7hko9DzhUcKZzx/m53AAAAAAAAAAAAAAAAABg0zfn21Nf0tdOJAAAAABJRU5ErkJggg==">
         <div id="drop-content">
-          <a href="index.html"><h3 class="dropbar">Home</h3></a>
+          <a href="index.html"><h3 class="dropbar">Shop</h3></a>
           <a href="contact.html"><h3 class="dropbar">Contact</h3></a>
           <a href="sizing.html"><h3 class="dropbar">Sizing Info</h3></a>
-          <a href="shop.html"><h3 class="dropbar">Shop</h3></a>
         </div>
         </div>
-</nav>
+</nav><!--appears when max width is 480px, used as navbar-->
         
 <div class="Search">
-    <form class="form" href="search.html">
-            <div class="form-field">
-                <div class="searcher">
-                    <input class="form-input" id="searcher" placeholder="Search store" autocomplete="off">
+    <form><!-- tag shows that there's something you can fill out will be present-->
+            
+                <div>
+                    <input id="searcher" placeholder="Search store" autocomplete="off"><!--input tag shows the user will be incontrol of the element-->
                     <input type="submit" class="button" id="searching" value="Search">
                 </div>
-            </div>
     </form>
 </div>
-
-        <nav class="ForUser">
-          <ul class="buy">
-          <li class="seperate-ul">
-
-            <a class="cart" href="cart.html">
-                <span class="cartlabel">Cart</span> 
-                <span class="cartlabel">0</span>
-            </a>
-        </li>
-      </ul>
-    </nav>
         </div>
       </div>
       
       
-      <div class="twodiv">
-    <div class="container">  
-          <nav class="navbar">
+      <div class="explorediv"><!--explodiv used again for same foundation-->
+    <div class="container"><!--container used again for same styling-->
+          <nav class="navbar"><!--this is the main navbar used when min width is 481px-->
 	<ul>
 		<li>
-			<a href="index.html">Home</a>
-		</li>
+			<a href="index.html">Shop</a>
+		</li >
 		<li>
 			<a href="contact.html">Contact</a>
 		</li>
 		<li>
 			<a href="sizing.html">Sizing info</a>
 		</li>
-		<li>
-			<a href="shop.html">Shop</a>
-		</li >
 	</ul>
 	</nav>
       </div> 
       </div>
-      </section>
+
+     <div class="containertwo"><!--new div container called containertwo-->
     
-    
-    <section>
-     <div class="containertwo">
-    
-    <a href="belts.html">
+    <a href="belts.html"><!--all elements withing the a tag until it's closing tag will link to the href link-->
     <div class="tile">
      <img class="img" src="https://cdn11.bigcommerce.com/s-50f81/images/stencil/320w/products/460/2007/CoreBJJBelts_NEW__89262.1573611838.jpg?c=2">
      <div class="buy"><h3>Belts</h3><h5>see more</h5></div>
      </div>
-    </a>
+    </a><!--this is the closing tag for the a tag-->
     
     <a href="karate.html">
     <div class="tile">
@@ -135,19 +120,17 @@
     </div>
     </a>
 
-     </div>
-    </section>
+     </div><!--end of containertwo containing tiles-->
+
     
     
-    
-    <footer>
+    <footer><!--bottom element of the page-->
       <div class="container">
-        <section class="footerinfo">
           <article class="navigate">
             <h5>Navigate</h5>
             	<ul>
 		<li>
-			<a href="index.html">Home</a>
+			<a href="index.html">Shop</a>
 		</li>
 		<li>
 			<a href="contact.html">Contact</a>
@@ -155,12 +138,8 @@
 		<li>
 			<a href="sizing.html">Sizing info</a>
 		</li>
-		<li>
-			<a href="shop.html">Shop</a>
-		</li>
 	</ul>
           </article>
-        </section>
       </div>
       
     </footer>
@@ -168,4 +147,4 @@
   
   
   
-</html>
+</html><!--end of code-->
