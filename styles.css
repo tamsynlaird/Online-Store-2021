@@ -1,111 +1,103 @@
-body{
-  background-color: #f7f3eb;
+/*# refers to an id, . refers to a class and nothing refers to a tag*/
+/*id means that the css should only apply to one element, class means css should be applied to multiple elements*/
+body{/*background colour of the entire site*/
+  background-color: #f7f3eb;/*background-color changes the background colour*/
+}
+
+headerhidden {/*headerhidden only comes out when the screen width changes, it's hidden on laptop screen sizes*/
+  display: none;/*display cotrols how the element we want to change is displayed, in this case none means the element isn't there*/
 }
 
 header {
-    background-color: #d6c7cd;
-    top: 0;
-    width: 100%;
-    font-family: sans-serif;
+    background-color: #bdaebf;
+    top: 0;/*top controls how far something is from the top, when 0 is on it's own you don't need to add units*/
+    width: 100%;/*width controls the width*/
+    font-family: sans-serif;/*font-family changes the font*/
 }
 
 #header-logo{
-  text-decoration: none;
-  padding-left: 20px;
-}
-#header-logo a:link{
-  text-decoration: none
+  padding-left: 20px;/*padding is the space between and element's border and content. padding-left adds space between only on the left side of the content*/
 }
 
-#header-logo-link{
-  text-decoration: underline 1px;
-  color: #cc0b04;
-}
-
-#header-logo-link a:hover{
-  text-decoration: underline 1px;
-  color: red;
+#header-logo-link a:hover{/*hover indicates that when a link is hovered over the css within the brackets take place(only when the element is being hovered over*/
+  text-decoration: underline purple 1px;/*text-decoration adds lines to the text depending on what you say, in this case it says underline which adds a line under the text, you can change the colour of th line by itself by giving the name/code of a colour and you can change the weight of the line by saying how many pxs it takes up as a line*/
+  color: red;/* colour changes the colour of the text only*/
 }
 
 #eng-logo{
- margin-top: 0; 
+ margin-top: 0; /*margin is the space around the content in an element. margin-top adss space at the top of the content */
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 20px;
+    display: flex;/*display changes the way wee see an element, flex means that available/unused space is going to be used and that flexbox functions are going to be used to customise how the unused space is filled by the items under it's effects*/
+    flex-direction: row;/*changes the direction of how the elements are laid out*/
+    justify-content: space-between;/*justify-content changes the layout of items horizontally, space between means there's space between elements and borders but not the elements themselves*/
+    padding-right: 20px;/*padding-right adds space between content and the border to the right*/
 }
 
 .ForUser {
-    width: auto;
+    width: auto;/*uto width allows an element to have width that doesn't get bigger than it's parent element(the element that this element is in)*/
     padding: 0;
 }
-.navUser{
-  border-left: white;
-}
 
-.twodiv{
-  background-color: #cbdb9a;
+.explorediv{
+  background-color: #d6c7cd;
 }
 
 input{
-  margin-top:10px ;
-  margin-left:3px;
+  margin-top:10px ;/*margin top adds margin to the top*/
+  margin-left:3px;/*margin left adds margin to the left(your left)*/
 }
 
 #drop-nav-button {
   display: none;
-  cursor: pointer;
+  cursor: pointer;/*when the mouse is over an element the cursor changes(mouse icon)*/
 }
+
 
 #searcher{
   padding:5px;
+  
 }
 
 #searching{
   padding:5px;
-}
-
-#searching:hover{
   cursor: pointer;
 }
 
 ul{
-  list-style-type: none;
+  list-style-type: none;/*list-style-type changes how something is listed. the preset for list items is bullet points. saying none displays the list with no type of listing*/
 }
 
 ul li a:link{
   text-decoration: none;
-	display: block;
+	display: block/*block buffs out elements and makes them more important which is why they come to stick out more*/;
 	color: black;
-	text-align: center;
-	padding: 7.5px 25px;
+	text-align: center;/*text-align aligns the text to where you want it to be*/
+	padding: 8px 25px;/*padding with two numbers means one effects the padding of the top and bottome(the first one) and left and right(second one)*/
 	font-family: sans-serif;
 }
 
 ul li {
     list-style-type: none;
-    float: left;
-    margin: 0 0 0 5px;
+    float: left; /* float says where elements should float(go)*/
 }
 
 ul li a:hover {  
   background-color: #f7f3eb;
   text-decoration: none;
-  border: 1px solid black;
-  border-bottom: #4d7fb2;
+  border: 1px solid black;/*border adds a border with the customisation you add after*/
+  border-bottom: none;/*border-bottom refers the the bottom side of an element, none means no border*/
 }
 
 .seperate-ul a:hover{
   border-bottom: 1px solid black;
 }
 
-a:link{
+a:link{ /*:link refers to how the link should be displayed while nothing has happened to it*/
   color:black;
 }
-a:visited{
+a:visited{/*:visited refers to how the link should be displayed after it's been visited*/
   color:black;
 }
 
@@ -115,20 +107,17 @@ a:visited{
 }
 
 .containertwo{
+  margin-top: 50px;
+  margin-bottom: 50px;
   display:flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.container iframe {
-  width: inherit;
-  height: inherit;
+  justify-content: center;/*center means the elements are displayed in the center*/
+  flex-wrap: wrap;/*flex-wrap has elements spot squeezing together in a single row and move to the bottom to stay the same size*/
 }
 
 .tile{
- display: inline-block;
+ display: inline-block;/*inline-block means the elements stay the same size but still move with the website*/
  margin:10px;
- height: 275px;
+ height: 275px;/*height controls the height of the element*/
  width:200px;
  background-color: white;
  border: solid #e6c7c7 3px;
@@ -138,7 +127,7 @@ a:visited{
   height: 285px;
   width:210px;
   cursor: pointer;
-  box-shadow: 0 0 7px grey;
+  box-shadow: 0 0 7px grey;/*box-shadow adds a shadow behind the element*/
   
 }
 
@@ -147,14 +136,15 @@ h3{
 }
 
 footer{
-  background-color:#4f4f4d;
+  background-color: #9a899c;
 }
 
-@media only screen and (max-width: 480px) {
+
+/*css for when screen size is within phone sizes*/
+@media only screen and (max-width: 480px) {/*@media rules make elements change depending on screen size*/
   header {
     display: none;
     }
-
 #drop-nav-button {
   display:inline-block;
   width: 50px;
@@ -170,7 +160,7 @@ footer{
 }
 #drop-nav-button:hover #drop-content {
   display:block;
-  position:absolute;
+  position:absolute;/*position changes the position of the element, absolute means that it will display over everything else because it is the absolute(most important)*/
 }
 .dropbar{
   height: 50px;
@@ -186,38 +176,54 @@ footer{
 .ForUser{
   display: none;
 }
-
  input{
    margin-bottom: 5px;
  }
+ 
+headerhidden{
+   display:inline-block;
+   width: 100%;
+   height: 60px;
+   background-color: #bdaebf;
+ }
+ 
+.header-media{
+   margin-bottom: 10px;
+ }
+}
+
+.product-header{
+   width: 100%;
+   text-align: center;
+   font-family: sans-serif;
 }
 
 
 
+ /*the styling and control for the dropdown ad*/
 #ad {
     position:absolute;
-    z-index: 2;
-    right: 20px;
-    top: -50px;
+    z-index: 2;/*z-index specifies the order of an object(only works on positioned elements)*/
+    right: 20px;/*20px from the right*/
+    top: -50px;/*-50px from the top(- means it's above the top(not seen))*/
     background-color: white;
     border: solid black 1px;
-    border-radius: 5px;
+    border-radius: 5px;/*border-radius rounds the sides*/
     width: 120px;
-    animation: dropdown 5s;
-    animation-direction: alternate;
-    animation-delay: 1s;
+    animation: dropdown 7s;/*the animation comes down AND dissapears in 5 seconds*/
+    animation-direction: alternate;/*defines whether an animation should be played forwards, backwards or in alternate cycles.*/
+    animation-delay: 2s;/*delays the start of the animation by one second*/
     font-family: monospace;
     padding: 5px;
 }
-@keyframes dropdown {
+@keyframes dropdown {/*makes animation work*/
     0% {
-        top: -50px;
+        top: -50px;/*where ad is at the start*/
     }
     50%{
-        top: 20px;
+        top: 20px;/*where ad is 1/2(50%) way through*/
     }
     100% {
-        top: 20px;
+        top: -50px;/*where ad is at the end before it disappears/leaves*/
     }
 }
-
